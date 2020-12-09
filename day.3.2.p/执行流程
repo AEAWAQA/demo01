@@ -1,0 +1,25 @@
+流程语句
+1.顺序结构 从上到下依次执行
+2.分支结构 根据条件判断结果，来决定执行哪段代码
+	if...else...   switch....case...
+3.循环结构 一段代码被反复执行
+	whiel...   do...while...   for...
+	
+分支结构  之 switch ... case...
+语法
+	switch(变量){
+		case 值1：console.log('显示1')；
+		break；
+		case 值2：console.log('显示2')；
+		break；
+		case 值3：console.log('显示3')；
+		break；
+		case 值4：console.log('显示4')；
+		break；
+		default:comsole.log('显示')
+	}
+总结：break的作用是结束switch语句
+在每条语句后面都有break的情况下，switch的顺序不影响执行结果
+因为程序会找第一个case的啊hi进行比较，接着第二个case，第三个case，
+知道对比成功，执行顺序，
+建议：每条语句后都有break，包括dfault
