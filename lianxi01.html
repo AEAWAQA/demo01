@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="../vue.js"></script>
+<script src="../d.js"></script>
+<style>
+    .box{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    img{
+        width: 200px;
+        height: 300px;
+    }
+    h1{
+        margin: 0 auto;
+    }
+</style>
+<title></title>
+</head>
+<body>
+<div id="app">
+    
+   <div class="box">
+       <h1>热榜150</h1>
+       
+        <ul v-for:arr>
+            <li>
+                <div class="pic">
+                    <img src=cover alt="">
+                </div>  
+                <div class="txt">
+                    <a href=title></a>
+                    <span>{{}}</span>
+                </div>
+                <div class="hidden">
+                    <span>id</span>
+                    <span>is_new</span>
+                </div>
+            </li>
+        </ul>
+   </div>
+
+</div>
+<script>
+var vm = new Vue({
+ el:'#app',
+ data:{
+    arr:subjects
+ },
+ methods:{},
+});
+</script>
+</body>
+</html>
